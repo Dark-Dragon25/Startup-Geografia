@@ -44,43 +44,52 @@
    - Fase 3: Desenvolvimento (semanas 9-18)
    - Fase 4: Testes + Apresentação (semanas 19-26)
 
+### 💰 MODELO DE NEGÓCIO
+
+6b. **[06-BUSINESS-MODEL.md](./06-BUSINESS-MODEL.md)** - Monetização (15 min)
+   - Modelo Freemium (Free + Premium + Premium Plus)
+   - TAM: R$ 1B+ (1,5M imigrantes)
+   - Receita esperada: R$ 1,1M/mês (cenário realista)
+   - Margem: 96,5%
+   - Outras fontes: comissão, cursos, publicidade
+
 ### 🔧 IMPLEMENTAÇÃO
 
-7. **[06-STACK.md](./06-STACK.md)** - Stack Tecnológico (10 min)
+8. **[07-STACK.md](./07-STACK.md)** - Stack Tecnológico (10 min)
    - React Native (Frontend)
    - Node.js + Express (Backend)
    - PostgreSQL (Banco)
    - OpenAI API (IA)
    - **Custo: 100% GRATUITO**
 
-8. **[07-DATABASE.md](./07-DATABASE.md)** - Banco de Dados (15 min)
+9. **[08-DATABASE.md](./08-DATABASE.md)** - Banco de Dados (15 min)
    - Schema SQL completo
    - 10 tabelas principais
    - Views úteis
    - Triggers e índices
 
-9. **[08-API.md](./08-API.md)** - API REST (20 min)
-   - 40+ endpoints documentados
-   - Autenticação, usuários, vagas, matching
-   - Comunidades, posts, chat IA
-   - Tratamento de erros
-   - Rate limiting
+10. **[09-API.md](./09-API.md)** - API REST (20 min)
+    - 40+ endpoints documentados
+    - Autenticação, usuários, vagas, matching
+    - Comunidades, posts, chat IA
+    - Tratamento de erros
+    - Rate limiting
 
-10. **[09-FRONTEND.md](./09-FRONTEND.md)** - Frontend Mobile (20 min)
+11. **[10-FRONTEND.md](./10-FRONTEND.md)** - Frontend Mobile (20 min)
     - 8 telas principais
     - Componentes reutilizáveis
     - Redux state management
     - Navigation com React Navigation
     - Design system
 
-11. **[10-AI-INTEGRATION.md](./10-AI-INTEGRATION.md)** - Integração IA (15 min)
+12. **[11-AI-INTEGRATION.md](./11-AI-INTEGRATION.md)** - Integração IA (15 min)
     - Motor de matching com IA
     - Tradução de competências
     - Chat com IA
     - OpenAI setup
     - Custo estimado
 
-12. **[11-DEPLOYMENT.md](./11-DEPLOYMENT.md)** - Deploy em Produção (15 min)
+13. **[12-DEPLOYMENT.md](./12-DEPLOYMENT.md)** - Deploy em Produção (15 min)
     - Backend em Railway (gratuito)
     - Frontend em Expo/EAS
     - PostgreSQL em Railway
@@ -89,7 +98,7 @@
 
 ### ✅ QUALIDADE
 
-13. **[12-TESTING.md](./12-TESTING.md)** - Testes Automatizados (20 min)
+14. **[13-TESTING.md](./13-TESTING.md)** - Testes Automatizados (20 min)
     - Testes unitários (Jest)
     - Testes de integração (Supertest)
     - Testes E2E (Detox)
@@ -98,7 +107,7 @@
 
 ### 📊 AVALIAÇÃO
 
-14. **[BENCHMARK-EVALUATION.md](./BENCHMARK-EVALUATION.md)** - Avaliação (15 min)
+15. **[BENCHMARK-EVALUATION.md](./BENCHMARK-EVALUATION.md)** - Avaliação (15 min)
     - Critérios do benchmark
     - Pontuação esperada (92%)
     - Checklist final
@@ -122,62 +131,65 @@
 3. 02-PERSONAS.md
 4. 03-SPECIFICATIONS.md
 5. 05-ROADMAP.md
-6. BENCHMARK-EVALUATION.md
+6. 06-BUSINESS-MODEL.md
+7. BENCHMARK-EVALUATION.md
 
 ### Para Backend Developer
 1. 04-ARCHITECTURE.md (seção Backend)
-2. 06-STACK.md (Node.js)
-3. 07-DATABASE.md
-4. 08-API.md
-5. 10-AI-INTEGRATION.md
-6. 11-DEPLOYMENT.md
-7. 12-TESTING.md
+2. 07-STACK.md (Node.js)
+3. 08-DATABASE.md
+4. 09-API.md
+5. 11-AI-INTEGRATION.md
+6. 12-DEPLOYMENT.md
+7. 13-TESTING.md
 
 ### Para Frontend Developer
 1. 04-ARCHITECTURE.md (seção Frontend)
-2. 06-STACK.md (React Native)
-3. 09-FRONTEND.md
-4. 08-API.md (como consumir)
-5. 11-DEPLOYMENT.md (Expo)
-6. 12-TESTING.md (React Native)
+2. 07-STACK.md (React Native)
+3. 10-FRONTEND.md
+4. 09-API.md (como consumir)
+5. 12-DEPLOYMENT.md (Expo)
+6. 13-TESTING.md (React Native)
 
 ### Para Designer/UX
 1. 02-PERSONAS.md
 2. 03-SPECIFICATIONS.md
-3. 09-FRONTEND.md
+3. 10-FRONTEND.md
 4. 04-ARCHITECTURE.md (fluxo)
 
 ### Para Executivo/Investor
 1. 00-OVERVIEW.md
 2. 01-PROJECT.md
-3. BENCHMARK-EVALUATION.md
-4. 06-STACK.md (seção custo)
+3. 06-BUSINESS-MODEL.md
+4. BENCHMARK-EVALUATION.md
+5. 07-STACK.md (seção custo)
 
 ---
 
 ## 🔍 BUSCAR POR TÓPICO
 
 ### Funcionalities
-- **Autenticação:** 08-API (POST /auth), 09-FRONTEND (LoginScreen)
-- **Perfil:** 08-API (GET/PUT /users), 09-FRONTEND (ProfileScreen)
-- **Busca de Vagas:** 08-API (GET /vagas), 09-FRONTEND (VagasScreen)
-- **Matching:** 04-ARCHITECTURE, 08-API (POST /matching), 10-AI-INTEGRATION
-- **Comunidades:** 08-API (GET /comunidades), 09-FRONTEND (ComunidadesScreen)
-- **Chat IA:** 08-API (POST /chat), 09-FRONTEND (ChatScreen), 10-AI-INTEGRATION
-- **Dashboard:** 09-FRONTEND (DashboardScreen)
+- **Autenticação:** 09-API (POST /auth), 10-FRONTEND (LoginScreen)
+- **Perfil:** 09-API (GET/PUT /users), 10-FRONTEND (ProfileScreen)
+- **Busca de Vagas:** 09-API (GET /vagas), 10-FRONTEND (VagasScreen)
+- **Matching:** 04-ARCHITECTURE, 09-API (POST /matching), 11-AI-INTEGRATION
+- **Comunidades:** 09-API (GET /comunidades), 10-FRONTEND (ComunidadesScreen)
+- **Chat IA:** 09-API (POST /chat), 10-FRONTEND (ChatScreen), 11-AI-INTEGRATION
+- **Dashboard:** 10-FRONTEND (DashboardScreen)
 
 ### Technical
-- **Database:** 07-DATABASE.md
-- **API:** 08-API.md
-- **Frontend:** 09-FRONTEND.md
-- **IA:** 10-AI-INTEGRATION.md
-- **Deploy:** 11-DEPLOYMENT.md
-- **Testes:** 12-TESTING.md
+- **Database:** 08-DATABASE.md
+- **API:** 09-API.md
+- **Frontend:** 10-FRONTEND.md
+- **IA:** 11-AI-INTEGRATION.md
+- **Deploy:** 12-DEPLOYMENT.md
+- **Testes:** 13-TESTING.md
 
 ### Business
 - **Problema:** 01-PROJECT.md
 - **Personas:** 02-PERSONAS.md
 - **Mercado:** 01-PROJECT.md
+- **Modelo de Negócio:** 06-BUSINESS-MODEL.md
 - **Roadmap:** 05-ROADMAP.md
 - **Avaliação:** BENCHMARK-EVALUATION.md
 
@@ -185,14 +197,15 @@
 
 ## 📊 ESTATÍSTICAS
 
-- **Total de documentos:** 14
-- **Linhas de documentação:** ~8.000
+- **Total de documentos:** 16
+- **Linhas de documentação:** ~10.000+
 - **Funcionalidades especificadas:** 6
 - **Endpoints API:** 40+
 - **Telas do app:** 8
 - **Testes planejados:** 20+
 - **Tempo até MVP:** 6 meses
-- **Custo mensal:** R$ 0-50 (gratuito)
+- **Receita esperada (ano 1):** R$ 1,1M/mês
+- **Custo infraestrutura:** R$ 0-50/mês (100% gratuito)
 
 ---
 
