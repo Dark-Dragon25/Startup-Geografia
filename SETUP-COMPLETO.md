@@ -3,8 +3,9 @@
 ## 🎉 Sucesso! Documentação 100% Pronta
 
 Data: **19 de Maio de 2026**  
-Status: **✅ FASE 1 CONCLUÍDA (com Modelo de Negócio)**  
-Documentação: **10.000+ linhas em 17 arquivos .md**
+Status: **✅ FASE 1 CONCLUÍDA (com Modelo de Negócio ÉTICO)**  
+Documentação: **12.000+ linhas em 18 arquivos .md**  
+Foco: **App 100% GRATUITO para imigrantes | Monetização B2B2C**
 
 ---
 
@@ -20,7 +21,8 @@ docs/
 ├── 03-SPECIFICATIONS.md           (6 funcionalidades)
 ├── 04-ARCHITECTURE.md             (Arquitetura técnica)
 ├── 05-ROADMAP.md                  (Cronograma 6 meses)
-├── 06-BUSINESS-MODEL.md           (💰 Modelo de Negócio - NOVO!)
+├── 06-BUSINESS-MODEL-REAL.md      (💰 MODELO ÉTICO - PRINCIPAL!)
+├── 06-BUSINESS-MODEL.md           (Modelo Freemium - referência)
 ├── 07-STACK.md                    (Stack 100% gratuito)
 ├── 08-DATABASE.md                 (Schema SQL completo)
 ├── 09-API.md                      (40+ endpoints)
@@ -72,13 +74,16 @@ startup-geografia/
 - ✅ Solução clara (matching + comunidade + documentação)
 - ✅ Mercado identificado (1,5M imigrantes no Brasil)
 - ✅ 4 personas com jornadas completas
-- ✅ **Modelo de negócio DETALHADO** (Freemium + receita + projeções)
-  - Tier Free (aquisição)
-  - Tier Premium R$ 19,90/mês
-  - Tier Premium Plus R$ 49,90/mês
-  - Receita esperada: R$ 1,1M/mês (ano 1)
-  - Margem: 96,5%
-  - Outras fontes: comissão, cursos, publicidade, parcerias
+- ✅ **MODELO REAL & ÉTICO** (06-BUSINESS-MODEL-REAL.md) ⭐
+  - App 100% GRATUITO para imigrantes (moralidade!)
+  - Monetização B2B2C (Empresas + Governo + ONGs)
+  - Receita: R$ 428.000/mês (ano 1, conservador)
+  - CAC: R$ 18 (distribuição via ONGs, igrejas, SINE)
+  - Margem: 91% (lucrativo)
+  - Fontes: Recrutamento (60%), Governo (25%), Agências (10%), Cursos (3%), Dados (2%)
+- ✅ Estratégia de distribuição (alcance real)
+  - 10+ ONGs, 20+ igrejas, SINE, telecom, universidades
+  - 108.000 usuários no 12º mês
 - ✅ Roadmap realista (6 meses)
 
 ### 🎨 Documentação Técnica
@@ -161,11 +166,12 @@ Diferentes públicos podem focar em diferentes documentos:
 ### Documentação
 | Métrica | Valor |
 |---|---|
-| Total de documentos | 17 |
-| Linhas de documentação | 10.000+ |
-| Tamanho total | 250 KB |
-| Tempo de leitura (completo) | 4 horas |
-| Tempo de leitura (essencial) | 45 min |
+| Total de documentos | 18 |
+| Linhas de documentação | 12.000+ |
+| Tamanho total | 300 KB |
+| Tempo de leitura (completo) | 5 horas |
+| Tempo de leitura (executivo) | 1 hora |
+| Tempo de leitura (essencial) | 1 hora |
 
 ### Cobertura
 | Aspecto | Cobertura |

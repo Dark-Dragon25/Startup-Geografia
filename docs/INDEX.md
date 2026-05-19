@@ -46,50 +46,50 @@
 
 ### 💰 MODELO DE NEGÓCIO
 
-6b. **[06-BUSINESS-MODEL.md](./06-BUSINESS-MODEL.md)** - Monetização (15 min)
-   - Modelo Freemium (Free + Premium + Premium Plus)
-   - TAM: R$ 1B+ (1,5M imigrantes)
-   - Receita esperada: R$ 1,1M/mês (cenário realista)
-   - Margem: 96,5%
-   - Outras fontes: comissão, cursos, publicidade
+6. **[06-BUSINESS-MODEL-REAL.md](./06-BUSINESS-MODEL-REAL.md)** - Monetização Ética ⭐ (20 min)
+   - **App 100% GRATUITO para imigrantes**
+   - Receita: Empresas (60%), Governo (25%), Agências (10%), Cursos (3%), Dados (2%)
+   - Receita esperada: R$ 428.000/mês
+   - Distribuição: ONGs, igrejas, SINE, telecom
+   - **Impacto social = lucro financeiro**
 
 ### 🔧 IMPLEMENTAÇÃO
 
-8. **[07-STACK.md](./07-STACK.md)** - Stack Tecnológico (10 min)
+7. **[07-STACK.md](./07-STACK.md)** - Stack Tecnológico (10 min)
    - React Native (Frontend)
    - Node.js + Express (Backend)
    - PostgreSQL (Banco)
    - OpenAI API (IA)
    - **Custo: 100% GRATUITO**
 
-9. **[08-DATABASE.md](./08-DATABASE.md)** - Banco de Dados (15 min)
+8. **[08-DATABASE.md](./08-DATABASE.md)** - Banco de Dados (15 min)
    - Schema SQL completo
    - 10 tabelas principais
    - Views úteis
    - Triggers e índices
 
-10. **[09-API.md](./09-API.md)** - API REST (20 min)
-    - 40+ endpoints documentados
-    - Autenticação, usuários, vagas, matching
-    - Comunidades, posts, chat IA
-    - Tratamento de erros
-    - Rate limiting
+9. **[09-API.md](./09-API.md)** - API REST (20 min)
+   - 40+ endpoints documentados
+   - Autenticação, usuários, vagas, matching
+   - Comunidades, posts, chat IA
+   - Tratamento de erros
+   - Rate limiting
 
-11. **[10-FRONTEND.md](./10-FRONTEND.md)** - Frontend Mobile (20 min)
+10. **[10-FRONTEND.md](./10-FRONTEND.md)** - Frontend Mobile (20 min)
     - 8 telas principais
     - Componentes reutilizáveis
     - Redux state management
     - Navigation com React Navigation
     - Design system
 
-12. **[11-AI-INTEGRATION.md](./11-AI-INTEGRATION.md)** - Integração IA (15 min)
+11. **[11-AI-INTEGRATION.md](./11-AI-INTEGRATION.md)** - Integração IA (15 min)
     - Motor de matching com IA
     - Tradução de competências
     - Chat com IA
     - OpenAI setup
     - Custo estimado
 
-13. **[12-DEPLOYMENT.md](./12-DEPLOYMENT.md)** - Deploy em Produção (15 min)
+12. **[12-DEPLOYMENT.md](./12-DEPLOYMENT.md)** - Deploy em Produção (15 min)
     - Backend em Railway (gratuito)
     - Frontend em Expo/EAS
     - PostgreSQL em Railway
@@ -98,7 +98,7 @@
 
 ### ✅ QUALIDADE
 
-14. **[13-TESTING.md](./13-TESTING.md)** - Testes Automatizados (20 min)
+13. **[13-TESTING.md](./13-TESTING.md)** - Testes Automatizados (20 min)
     - Testes unitários (Jest)
     - Testes de integração (Supertest)
     - Testes E2E (Detox)
@@ -107,7 +107,7 @@
 
 ### 📊 AVALIAÇÃO
 
-15. **[BENCHMARK-EVALUATION.md](./BENCHMARK-EVALUATION.md)** - Avaliação (15 min)
+14. **[BENCHMARK-EVALUATION.md](./BENCHMARK-EVALUATION.md)** - Avaliação (15 min)
     - Critérios do benchmark
     - Pontuação esperada (92%)
     - Checklist final
@@ -131,38 +131,41 @@
 3. 02-PERSONAS.md
 4. 03-SPECIFICATIONS.md
 5. 05-ROADMAP.md
-6. 06-BUSINESS-MODEL.md
+6. 06-BUSINESS-MODEL-REAL.md ⭐
 7. BENCHMARK-EVALUATION.md
 
 ### Para Backend Developer
 1. 04-ARCHITECTURE.md (seção Backend)
-2. 07-STACK.md (Node.js)
-3. 08-DATABASE.md
-4. 09-API.md
-5. 11-AI-INTEGRATION.md
-6. 12-DEPLOYMENT.md
-7. 13-TESTING.md
+2. 06-BUSINESS-MODEL-REAL.md (entender distribuição)
+3. 07-STACK.md (Node.js)
+4. 08-DATABASE.md
+5. 09-API.md
+6. 11-AI-INTEGRATION.md
+7. 12-DEPLOYMENT.md
+8. 13-TESTING.md
 
 ### Para Frontend Developer
 1. 04-ARCHITECTURE.md (seção Frontend)
-2. 07-STACK.md (React Native)
-3. 10-FRONTEND.md
-4. 09-API.md (como consumir)
-5. 12-DEPLOYMENT.md (Expo)
-6. 13-TESTING.md (React Native)
+2. 06-BUSINESS-MODEL-REAL.md (entender fluxos de usuário)
+3. 07-STACK.md (React Native)
+4. 10-FRONTEND.md
+5. 09-API.md (como consumir)
+6. 12-DEPLOYMENT.md (Expo)
+7. 13-TESTING.md (React Native)
 
 ### Para Designer/UX
 1. 02-PERSONAS.md
 2. 03-SPECIFICATIONS.md
-3. 10-FRONTEND.md
-4. 04-ARCHITECTURE.md (fluxo)
+3. 06-BUSINESS-MODEL-REAL.md (distribuição = fluxos)
+4. 10-FRONTEND.md
+5. 04-ARCHITECTURE.md (fluxo)
 
-### Para Executivo/Investor
+### Para Executivo/Investor ⭐ LEIA ISSO PRIMEIRO
 1. 00-OVERVIEW.md
 2. 01-PROJECT.md
-3. 06-BUSINESS-MODEL.md
+3. 06-BUSINESS-MODEL-REAL.md (modelo ético + escalável)
 4. BENCHMARK-EVALUATION.md
-5. 07-STACK.md (seção custo)
+5. 02-PERSONAS.md (impacto social)
 
 ---
 
@@ -188,8 +191,10 @@
 ### Business
 - **Problema:** 01-PROJECT.md
 - **Personas:** 02-PERSONAS.md
-- **Mercado:** 01-PROJECT.md
-- **Modelo de Negócio:** 06-BUSINESS-MODEL.md
+- **Mercado & TAM:** 01-PROJECT.md
+- **Modelo de Negócio:** 06-BUSINESS-MODEL-REAL.md ⭐ (Ético + Escalável)
+- **Distribuição/Alcance:** 06-BUSINESS-MODEL-REAL.md (ONGs, igrejas, SINE)
+- **Monetização:** 06-BUSINESS-MODEL-REAL.md (Empresas, Governo)
 - **Roadmap:** 05-ROADMAP.md
 - **Avaliação:** BENCHMARK-EVALUATION.md
 
@@ -197,15 +202,17 @@
 
 ## 📊 ESTATÍSTICAS
 
-- **Total de documentos:** 16
-- **Linhas de documentação:** ~10.000+
+- **Total de documentos:** 18
+- **Linhas de documentação:** ~12.000+
 - **Funcionalidades especificadas:** 6
 - **Endpoints API:** 40+
 - **Telas do app:** 8
 - **Testes planejados:** 20+
 - **Tempo até MVP:** 6 meses
-- **Receita esperada (ano 1):** R$ 1,1M/mês
+- **Receita esperada (ano 1):** R$ 428.000/mês (B2B)
+- **CAC (Customer Acquisition Cost):** R$ 18
 - **Custo infraestrutura:** R$ 0-50/mês (100% gratuito)
+- **App para usuários:** 100% GRATUITO
 
 ---
 
