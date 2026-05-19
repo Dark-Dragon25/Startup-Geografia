@@ -53,43 +53,52 @@
    - Distribuição: ONGs, igrejas, SINE, telecom
    - **Impacto social = lucro financeiro**
 
+### 📍 DISTRIBUIÇÃO & CRESCIMENTO
+
+7. **[07-GO-TO-MARKET.md](./07-GO-TO-MARKET.md)** - Como Chegar nas Pessoas (20 min) ⭐ **IMPORTANTE**
+   - 7 canais de distribuição (ONGs, igrejas, SINE, telecom, etc)
+   - 108.000 usuários no mês 12
+   - Partnership-led growth (não publicidade cara)
+   - CAC: R$ 18-50 (muito baixo)
+   - 4 fases de implementação
+
 ### 🔧 IMPLEMENTAÇÃO
 
-7. **[07-STACK.md](./07-STACK.md)** - Stack Tecnológico (10 min)
+8. **[08-STACK.md](./08-STACK.md)** - Stack Tecnológico (10 min)
    - React Native (Frontend)
    - Node.js + Express (Backend)
    - PostgreSQL (Banco)
    - OpenAI API (IA)
    - **Custo: 100% GRATUITO**
 
-8. **[08-DATABASE.md](./08-DATABASE.md)** - Banco de Dados (15 min)
+9. **[09-DATABASE.md](./09-DATABASE.md)** - Banco de Dados (15 min)
    - Schema SQL completo
    - 10 tabelas principais
    - Views úteis
    - Triggers e índices
 
-9. **[09-API.md](./09-API.md)** - API REST (20 min)
+10. **[10-API.md](./10-API.md)** - API REST (20 min)
    - 40+ endpoints documentados
    - Autenticação, usuários, vagas, matching
    - Comunidades, posts, chat IA
    - Tratamento de erros
    - Rate limiting
 
-10. **[10-FRONTEND.md](./10-FRONTEND.md)** - Frontend Mobile (20 min)
+11. **[11-FRONTEND.md](./11-FRONTEND.md)** - Frontend Mobile (20 min)
     - 8 telas principais
     - Componentes reutilizáveis
     - Redux state management
     - Navigation com React Navigation
     - Design system
 
-11. **[11-AI-INTEGRATION.md](./11-AI-INTEGRATION.md)** - Integração IA (15 min)
+12. **[12-AI-INTEGRATION.md](./12-AI-INTEGRATION.md)** - Integração IA (15 min)
     - Motor de matching com IA
     - Tradução de competências
     - Chat com IA
     - OpenAI setup
     - Custo estimado
 
-12. **[12-DEPLOYMENT.md](./12-DEPLOYMENT.md)** - Deploy em Produção (15 min)
+13. **[13-DEPLOYMENT.md](./13-DEPLOYMENT.md)** - Deploy em Produção (15 min)
     - Backend em Railway (gratuito)
     - Frontend em Expo/EAS
     - PostgreSQL em Railway
@@ -98,7 +107,7 @@
 
 ### ✅ QUALIDADE
 
-13. **[13-TESTING.md](./13-TESTING.md)** - Testes Automatizados (20 min)
+14. **[14-TESTING.md](./14-TESTING.md)** - Testes Automatizados (20 min)
     - Testes unitários (Jest)
     - Testes de integração (Supertest)
     - Testes E2E (Detox)
@@ -137,21 +146,23 @@
 ### Para Backend Developer
 1. 04-ARCHITECTURE.md (seção Backend)
 2. 06-BUSINESS-MODEL-REAL.md (entender distribuição)
-3. 07-STACK.md (Node.js)
-4. 08-DATABASE.md
-5. 09-API.md
-6. 11-AI-INTEGRATION.md
-7. 12-DEPLOYMENT.md
-8. 13-TESTING.md
+3. 07-GO-TO-MARKET.md (parceiros e fluxos)
+4. 08-STACK.md (Node.js)
+5. 09-DATABASE.md
+6. 10-API.md
+7. 12-AI-INTEGRATION.md
+8. 13-DEPLOYMENT.md
+9. 14-TESTING.md
 
 ### Para Frontend Developer
 1. 04-ARCHITECTURE.md (seção Frontend)
 2. 06-BUSINESS-MODEL-REAL.md (entender fluxos de usuário)
-3. 07-STACK.md (React Native)
-4. 10-FRONTEND.md
-5. 09-API.md (como consumir)
-6. 12-DEPLOYMENT.md (Expo)
-7. 13-TESTING.md (React Native)
+3. 07-GO-TO-MARKET.md (como usuários chegam)
+4. 08-STACK.md (React Native)
+5. 11-FRONTEND.md
+6. 10-API.md (como consumir)
+7. 13-DEPLOYMENT.md (Expo)
+8. 14-TESTING.md (React Native)
 
 ### Para Designer/UX
 1. 02-PERSONAS.md
@@ -202,17 +213,19 @@
 
 ## 📊 ESTATÍSTICAS
 
-- **Total de documentos:** 18
-- **Linhas de documentação:** ~12.000+
+- **Total de documentos:** 19
+- **Linhas de documentação:** ~13.000+
 - **Funcionalidades especificadas:** 6
 - **Endpoints API:** 40+
 - **Telas do app:** 8
 - **Testes planejados:** 20+
 - **Tempo até MVP:** 6 meses
-- **Receita esperada (ano 1):** R$ 428.000/mês (B2B)
-- **CAC (Customer Acquisition Cost):** R$ 18
-- **Custo infraestrutura:** R$ 0-50/mês (100% gratuito)
-- **App para usuários:** 100% GRATUITO
+- **Usuários esperados (mês 12):** 108.000
+- **Receita esperada (mês 12):** R$ 428.000/mês (B2B)
+- **CAC (Customer Acquisition Cost):** R$ 18-50 (muito baixo!)
+- **Custo infraestrutura:** R$ 39.500/mês (100% gratuito para infra)
+- **Lucro esperado:** R$ 388.500/mês (91% margem)
+- **App para usuários finais:** 100% GRATUITO ✅
 
 ---
 
