@@ -1,0 +1,59 @@
+{
+  "welcome": {
+    "title": "Welcome to IMIGRA.AI",
+    "subtitle": "We connect qualified immigrants with the best job opportunities in Brazil.",
+    "description": "Find positions that value your background and experience, regardless of where you come from.",
+    "cta": "Let's Get Started",
+    "login": "Already have an account? Sign in"
+  },
+  "onboarding": {
+    "step1": "Personal Information",
+    "step2": "Contact",
+    "step3": "Professional Profile",
+    "step4": "Documents",
+    "next": "Next",
+    "back": "Back",
+    "complete": "Create Account",
+    "progress": "{{current}} of {{total}}"
+  },
+  "form": {
+    "fullName": "Full name",
+    "birthDate": "Date of birth",
+    "originCountry": "Country of origin",
+    "languages": "Languages you speak",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "phone": "Mobile/WhatsApp",
+    "howDiscovered": "How did you discover IMIGRA.AI?",
+    "professionalArea": "Professional area",
+    "experience": "Experience level",
+    "preferredCity": "City where you want to work",
+    "curriculum": "Resume (PDF/DOCX)",
+    "diploma": "Education certificate",
+    "submit": "Submit",
+    "selectFile": "Select a file or drag here",
+    "required": "Required field",
+    "invalidEmail": "Invalid email",
+    "passwordTooShort": "Minimum 8 characters",
+    "passwordMismatch": "Passwords do not match",
+    "success": "Registration completed successfully!",
+    "loading": "Loading..."
+  },
+  "dashboard": {
+    "title": "Opportunities for You",
+    "noJobs": "No positions found with your filters",
+    "compatibility": "Compatibility",
+    "viewDetails": "View Details",
+    "apply": "Apply",
+    "filters": "Filters",
+    "area": "Area",
+    "city": "City",
+    "regime": "Type"
+  },
+  "errors": {
+    "network": "Connection error. Try again.",
+    "server": "Server error. Try later.",
+    "notFound": "Page not found"
+  }
+}

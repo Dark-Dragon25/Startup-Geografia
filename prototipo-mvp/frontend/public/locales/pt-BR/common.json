@@ -1,0 +1,59 @@
+{
+  "welcome": {
+    "title": "Bem-vindo ao IMIGRA.AI",
+    "subtitle": "Conectamos imigrantes qualificados com as melhores oportunidades de emprego no Brasil.",
+    "description": "Encontre vagas que valorizam seu histórico e experiência, independente de onde você veio.",
+    "cta": "Vamos Começar",
+    "login": "Já tem conta? Entrar"
+  },
+  "onboarding": {
+    "step1": "Dados Pessoais",
+    "step2": "Contato",
+    "step3": "Perfil Profissional",
+    "step4": "Documentos",
+    "next": "Próximo",
+    "back": "Voltar",
+    "complete": "Criar Conta",
+    "progress": "{{current}} de {{total}}"
+  },
+  "form": {
+    "fullName": "Nome completo",
+    "birthDate": "Data de nascimento",
+    "originCountry": "País de origem",
+    "languages": "Idiomas que fala",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "phone": "Celular/WhatsApp",
+    "howDiscovered": "Como descobriu o IMIGRA.AI?",
+    "professionalArea": "Área profissional",
+    "experience": "Nível de experiência",
+    "preferredCity": "Cidade onde quer trabalhar",
+    "curriculum": "Currículo (PDF/DOCX)",
+    "diploma": "Comprovante de formação",
+    "submit": "Enviar",
+    "selectFile": "Selecione um arquivo ou arraste aqui",
+    "required": "Campo obrigatório",
+    "invalidEmail": "E-mail inválido",
+    "passwordTooShort": "Mínimo 8 caracteres",
+    "passwordMismatch": "As senhas não correspondem",
+    "success": "Cadastro realizado com sucesso!",
+    "loading": "Carregando..."
+  },
+  "dashboard": {
+    "title": "Oportunidades para Você",
+    "noJobs": "Nenhuma vaga encontrada com seus filtros",
+    "compatibility": "Compatibilidade",
+    "viewDetails": "Ver Detalhes",
+    "apply": "Candidatar",
+    "filters": "Filtros",
+    "area": "Área",
+    "city": "Cidade",
+    "regime": "Regime"
+  },
+  "errors": {
+    "network": "Erro de conexão. Tente novamente.",
+    "server": "Erro no servidor. Tente mais tarde.",
+    "notFound": "Página não encontrada"
+  }
+}

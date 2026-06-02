@@ -1,0 +1,59 @@
+{
+  "welcome": {
+    "title": "Bienvenido a IMIGRA.AI",
+    "subtitle": "Conectamos inmigrantes calificados con las mejores oportunidades de empleo en Brasil.",
+    "description": "Encuentre vacantes que valoren su historial y experiencia, sin importar de dónde venga.",
+    "cta": "Empecemos",
+    "login": "¿Ya tienes cuenta? Inicia sesión"
+  },
+  "onboarding": {
+    "step1": "Datos Personales",
+    "step2": "Contacto",
+    "step3": "Perfil Profesional",
+    "step4": "Documentos",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "complete": "Crear Cuenta",
+    "progress": "{{current}} de {{total}}"
+  },
+  "form": {
+    "fullName": "Nombre completo",
+    "birthDate": "Fecha de nacimiento",
+    "originCountry": "País de origen",
+    "languages": "Idiomas que hablas",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "phone": "Celular/WhatsApp",
+    "howDiscovered": "¿Cómo descubriste IMIGRA.AI?",
+    "professionalArea": "Área profesional",
+    "experience": "Nivel de experiencia",
+    "preferredCity": "Ciudad donde quieres trabajar",
+    "curriculum": "Currículum (PDF/DOCX)",
+    "diploma": "Comprobante de formación",
+    "submit": "Enviar",
+    "selectFile": "Selecciona un archivo o arrastra aquí",
+    "required": "Campo obligatorio",
+    "invalidEmail": "Correo electrónico inválido",
+    "passwordTooShort": "Mínimo 8 caracteres",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "success": "¡Registro completado con éxito!",
+    "loading": "Cargando..."
+  },
+  "dashboard": {
+    "title": "Oportunidades para Ti",
+    "noJobs": "Ninguna vacante encontrada con tus filtros",
+    "compatibility": "Compatibilidad",
+    "viewDetails": "Ver Detalles",
+    "apply": "Postularse",
+    "filters": "Filtros",
+    "area": "Área",
+    "city": "Ciudad",
+    "regime": "Régimen"
+  },
+  "errors": {
+    "network": "Error de conexión. Intenta de nuevo.",
+    "server": "Error en el servidor. Intenta más tarde.",
+    "notFound": "Página no encontrada"
+  }
+}
