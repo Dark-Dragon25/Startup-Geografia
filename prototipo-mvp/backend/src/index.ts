@@ -6,6 +6,7 @@ import * as cron from 'node-cron';
 import authRoutes from './routes/auth';
 import jobRoutes from './routes/jobs';
 import cvRoutes from './routes/cv';
+import chatRoutes from './routes/chat';
 import { vagasJobScheduler } from './services/vagasService';
 
 dotenv.config();
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/vagas', jobRoutes);
 app.use('/api/cv', cvRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Health check
 app.get('/health', (req, res) => {

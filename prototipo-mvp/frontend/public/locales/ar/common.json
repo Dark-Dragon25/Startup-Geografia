@@ -1,59 +1,49 @@
 {
   "welcome": {
-    "title": "Welcome to IMIGRA.AI",
-    "subtitle": "We connect qualified immigrants with the best job opportunities in Brazil.",
-    "description": "Find positions that value your background and experience, regardless of where you come from.",
-    "cta": "Let's Get Started",
-    "login": "Already have an account? Sign in"
+    "title": "مرحباً بك في IMIGRA.AI",
+    "subtitle": "نربط المهاجرين المؤهلين بأفضل فرص العمل في البرازيل.",
+    "description": "ابحث عن وظائف تُقدّر خبرتك، بغض النظر عن بلدك الأصلي.",
+    "cta": "لنبدأ",
+    "login": "لديك حساب؟ تسجيل الدخول"
   },
   "onboarding": {
-    "step1": "Personal Information",
-    "step2": "Contact",
-    "step3": "Professional Profile",
-    "step4": "Documents",
-    "next": "Next",
-    "back": "Back",
-    "complete": "Create Account",
-    "progress": "{{current}} of {{total}}"
+    "step1": "البيانات الشخصية", "step2": "معلومات الاتصال",
+    "step3": "الملف المهني", "step4": "الوثائق",
+    "next": "التالي", "back": "رجوع",
+    "complete": "إنشاء حساب", "progress": "{{current}} من {{total}}"
   },
   "form": {
-    "fullName": "Full name",
-    "birthDate": "Date of birth",
-    "originCountry": "Country of origin",
-    "languages": "Languages you speak",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm password",
-    "phone": "Mobile/WhatsApp",
-    "howDiscovered": "How did you discover IMIGRA.AI?",
-    "professionalArea": "Professional area",
-    "experience": "Experience level",
-    "preferredCity": "City where you want to work",
-    "curriculum": "Resume (PDF/DOCX)",
-    "diploma": "Education certificate",
-    "submit": "Submit",
-    "selectFile": "Select a file or drag here",
-    "required": "Required field",
-    "invalidEmail": "Invalid email",
-    "passwordTooShort": "Minimum 8 characters",
-    "passwordMismatch": "Passwords do not match",
-    "success": "Registration completed successfully!",
-    "loading": "Loading..."
+    "fullName": "الاسم الكامل", "birthDate": "تاريخ الميلاد",
+    "originCountry": "بلد المنشأ", "languages": "اللغات التي تتحدثها",
+    "email": "البريد الإلكتروني", "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور", "phone": "الهاتف/واتساب",
+    "howDiscovered": "كيف اكتشفت IMIGRA.AI؟",
+    "professionalArea": "المجال المهني", "experience": "مستوى الخبرة",
+    "preferredCity": "المدينة التي تريد العمل فيها", "curriculum": "السيرة الذاتية (PDF/DOCX)",
+    "diploma": "شهادة التعليم", "submit": "إرسال",
+    "selectFile": "اختر ملفاً أو اسحبه هنا",
+    "required": "حقل مطلوب", "invalidEmail": "بريد إلكتروني غير صالح",
+    "passwordTooShort": "8 أحرف على الأقل",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "success": "تم التسجيل بنجاح!", "loading": "جاري التحميل..."
   },
   "dashboard": {
-    "title": "Opportunities for You",
-    "noJobs": "No positions found with your filters",
-    "compatibility": "Compatibility",
-    "viewDetails": "View Details",
-    "apply": "Apply",
-    "filters": "Filters",
-    "area": "Area",
-    "city": "City",
-    "regime": "Type"
+    "title": "الفرص المتاحة لك",
+    "noJobs": "لا توجد وظائف مطابقة للفلاتر",
+    "compatibility": "التوافق", "viewDetails": "عرض التفاصيل",
+    "apply": "التقدم", "filters": "الفلاتر",
+    "area": "المجال", "city": "المدينة", "regime": "النوع", "chat": "مساعد الذكاء الاصطناعي"
+  },
+  "chat": {
+    "title": "مساعد IMIGRA.AI",
+    "subtitle": "احصل على مساعدة للبحث عن عمل والوثائق والاعتراف بالمؤهلات.",
+    "placeholder": "اكتب سؤالك...", "send": "إرسال",
+    "thinking": "يفكر...", "clearChat": "مسح المحادثة",
+    "suggestions": ["كيف أعتمد شهادتي في البرازيل؟", "ما الوثائق اللازمة للعمل؟", "كيف أحسّن سيرتي الذاتية؟", "ما حقوقي كعامل مهاجر؟"],
+    "greeting": "مرحباً! أنا مساعد IMIGRA.AI. أساعدك في العمل والتوثيق والحياة في البرازيل. كيف يمكنني مساعدتك؟",
+    "error": "عذراً، حدث خطأ. حاول مرة أخرى."
   },
   "errors": {
-    "network": "Connection error. Try again.",
-    "server": "Server error. Try later.",
-    "notFound": "Page not found"
+    "network": "خطأ في الاتصال.", "server": "خطأ في الخادم.", "notFound": "الصفحة غير موجودة"
   }
 }

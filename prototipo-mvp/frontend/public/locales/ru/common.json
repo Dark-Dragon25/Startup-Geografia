@@ -1,59 +1,49 @@
 {
   "welcome": {
-    "title": "Welcome to IMIGRA.AI",
-    "subtitle": "We connect qualified immigrants with the best job opportunities in Brazil.",
-    "description": "Find positions that value your background and experience, regardless of where you come from.",
-    "cta": "Let's Get Started",
-    "login": "Already have an account? Sign in"
+    "title": "Добро пожаловать в IMIGRA.AI",
+    "subtitle": "Мы соединяем квалифицированных иммигрантов с лучшими возможностями трудоустройства в Бразилии.",
+    "description": "Найдите работу, которая ценит ваш опыт, независимо от вашего происхождения.",
+    "cta": "Начнём",
+    "login": "Уже есть аккаунт? Войти"
   },
   "onboarding": {
-    "step1": "Personal Information",
-    "step2": "Contact",
-    "step3": "Professional Profile",
-    "step4": "Documents",
-    "next": "Next",
-    "back": "Back",
-    "complete": "Create Account",
-    "progress": "{{current}} of {{total}}"
+    "step1": "Личные данные", "step2": "Контакты",
+    "step3": "Профессиональный профиль", "step4": "Документы",
+    "next": "Далее", "back": "Назад",
+    "complete": "Создать аккаунт", "progress": "{{current}} из {{total}}"
   },
   "form": {
-    "fullName": "Full name",
-    "birthDate": "Date of birth",
-    "originCountry": "Country of origin",
-    "languages": "Languages you speak",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm password",
-    "phone": "Mobile/WhatsApp",
-    "howDiscovered": "How did you discover IMIGRA.AI?",
-    "professionalArea": "Professional area",
-    "experience": "Experience level",
-    "preferredCity": "City where you want to work",
-    "curriculum": "Resume (PDF/DOCX)",
-    "diploma": "Education certificate",
-    "submit": "Submit",
-    "selectFile": "Select a file or drag here",
-    "required": "Required field",
-    "invalidEmail": "Invalid email",
-    "passwordTooShort": "Minimum 8 characters",
-    "passwordMismatch": "Passwords do not match",
-    "success": "Registration completed successfully!",
-    "loading": "Loading..."
+    "fullName": "Полное имя", "birthDate": "Дата рождения",
+    "originCountry": "Страна происхождения", "languages": "Языки, которыми вы владеете",
+    "email": "Электронная почта", "password": "Пароль",
+    "confirmPassword": "Подтвердить пароль", "phone": "Телефон/WhatsApp",
+    "howDiscovered": "Как вы узнали о IMIGRA.AI?",
+    "professionalArea": "Область деятельности", "experience": "Уровень опыта",
+    "preferredCity": "Город для работы", "curriculum": "Резюме (PDF/DOCX)",
+    "diploma": "Документ об образовании", "submit": "Отправить",
+    "selectFile": "Выберите файл или перетащите сюда",
+    "required": "Обязательное поле", "invalidEmail": "Неверная электронная почта",
+    "passwordTooShort": "Минимум 8 символов",
+    "passwordMismatch": "Пароли не совпадают",
+    "success": "Регистрация успешна!", "loading": "Загрузка..."
   },
   "dashboard": {
-    "title": "Opportunities for You",
-    "noJobs": "No positions found with your filters",
-    "compatibility": "Compatibility",
-    "viewDetails": "View Details",
-    "apply": "Apply",
-    "filters": "Filters",
-    "area": "Area",
-    "city": "City",
-    "regime": "Type"
+    "title": "Возможности для вас",
+    "noJobs": "Вакансии по вашим фильтрам не найдены",
+    "compatibility": "Совместимость", "viewDetails": "Подробнее",
+    "apply": "Подать заявку", "filters": "Фильтры",
+    "area": "Область", "city": "Город", "regime": "Тип", "chat": "ИИ Ассистент"
+  },
+  "chat": {
+    "title": "Ассистент IMIGRA.AI",
+    "subtitle": "Помощь с поиском работы, документами и признанием дипломов.",
+    "placeholder": "Напишите ваш вопрос...", "send": "Отправить",
+    "thinking": "Думаю...", "clearChat": "Очистить разговор",
+    "suggestions": ["Как признать диплом в Бразилии?", "Какие документы нужны для работы?", "Как улучшить резюме для бразильского рынка?", "Какие мои права как рабочего-иммигранта?"],
+    "greeting": "Привет! Я ассистент IMIGRA.AI. Помогаю с работой, документами и жизнью в Бразилии. Как я могу помочь?",
+    "error": "Извините, произошла ошибка. Попробуйте снова."
   },
   "errors": {
-    "network": "Connection error. Try again.",
-    "server": "Server error. Try later.",
-    "notFound": "Page not found"
+    "network": "Ошибка соединения.", "server": "Ошибка сервера.", "notFound": "Страница не найдена"
   }
 }

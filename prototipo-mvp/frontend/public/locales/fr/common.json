@@ -1,59 +1,49 @@
 {
   "welcome": {
-    "title": "Welcome to IMIGRA.AI",
-    "subtitle": "We connect qualified immigrants with the best job opportunities in Brazil.",
-    "description": "Find positions that value your background and experience, regardless of where you come from.",
-    "cta": "Let's Get Started",
-    "login": "Already have an account? Sign in"
+    "title": "Bienvenue sur IMIGRA.AI",
+    "subtitle": "Nous connectons les immigrants qualifiés avec les meilleures opportunités d'emploi au Brésil.",
+    "description": "Trouvez des postes qui valorisent votre parcours, peu importe d'où vous venez.",
+    "cta": "Commençons",
+    "login": "Vous avez un compte? Se connecter"
   },
   "onboarding": {
-    "step1": "Personal Information",
-    "step2": "Contact",
-    "step3": "Professional Profile",
-    "step4": "Documents",
-    "next": "Next",
-    "back": "Back",
-    "complete": "Create Account",
-    "progress": "{{current}} of {{total}}"
+    "step1": "Données Personnelles", "step2": "Contact",
+    "step3": "Profil Professionnel", "step4": "Documents",
+    "next": "Suivant", "back": "Retour",
+    "complete": "Créer un Compte", "progress": "{{current}} sur {{total}}"
   },
   "form": {
-    "fullName": "Full name",
-    "birthDate": "Date of birth",
-    "originCountry": "Country of origin",
-    "languages": "Languages you speak",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm password",
-    "phone": "Mobile/WhatsApp",
-    "howDiscovered": "How did you discover IMIGRA.AI?",
-    "professionalArea": "Professional area",
-    "experience": "Experience level",
-    "preferredCity": "City where you want to work",
-    "curriculum": "Resume (PDF/DOCX)",
-    "diploma": "Education certificate",
-    "submit": "Submit",
-    "selectFile": "Select a file or drag here",
-    "required": "Required field",
-    "invalidEmail": "Invalid email",
-    "passwordTooShort": "Minimum 8 characters",
-    "passwordMismatch": "Passwords do not match",
-    "success": "Registration completed successfully!",
-    "loading": "Loading..."
+    "fullName": "Nom complet", "birthDate": "Date de naissance",
+    "originCountry": "Pays d'origine", "languages": "Langues parlées",
+    "email": "E-mail", "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe", "phone": "Mobile/WhatsApp",
+    "howDiscovered": "Comment avez-vous découvert IMIGRA.AI?",
+    "professionalArea": "Domaine professionnel", "experience": "Niveau d'expérience",
+    "preferredCity": "Ville de travail souhaitée", "curriculum": "CV (PDF/DOCX)",
+    "diploma": "Attestation de formation", "submit": "Soumettre",
+    "selectFile": "Sélectionnez un fichier ou glissez ici",
+    "required": "Champ obligatoire", "invalidEmail": "E-mail invalide",
+    "passwordTooShort": "Minimum 8 caractères",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "success": "Inscription réussie!", "loading": "Chargement..."
   },
   "dashboard": {
-    "title": "Opportunities for You",
-    "noJobs": "No positions found with your filters",
-    "compatibility": "Compatibility",
-    "viewDetails": "View Details",
-    "apply": "Apply",
-    "filters": "Filters",
-    "area": "Area",
-    "city": "City",
-    "regime": "Type"
+    "title": "Opportunités pour Vous",
+    "noJobs": "Aucun poste trouvé avec vos filtres",
+    "compatibility": "Compatibilité", "viewDetails": "Voir les Détails",
+    "apply": "Postuler", "filters": "Filtres",
+    "area": "Domaine", "city": "Ville", "regime": "Type", "chat": "Assistant IA"
+  },
+  "chat": {
+    "title": "Assistant IMIGRA.AI",
+    "subtitle": "Aide pour l'emploi, la documentation et la revalidation de diplômes.",
+    "placeholder": "Tapez votre question...", "send": "Envoyer",
+    "thinking": "Réflexion...", "clearChat": "Effacer la conversation",
+    "suggestions": ["Comment revalider mon diplôme au Brésil?", "Quels documents pour travailler ici?", "Comment améliorer mon CV?", "Mes droits comme travailleur immigrant?"],
+    "greeting": "Bonjour! Je suis l'assistant IMIGRA.AI. Je vous aide avec l'emploi et la vie au Brésil. Comment puis-je vous aider?",
+    "error": "Désolé, une erreur s'est produite. Réessayez."
   },
   "errors": {
-    "network": "Connection error. Try again.",
-    "server": "Server error. Try later.",
-    "notFound": "Page not found"
+    "network": "Erreur de connexion.", "server": "Erreur du serveur.", "notFound": "Page non trouvée"
   }
 }

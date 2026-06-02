@@ -49,7 +49,24 @@
     "filters": "Filters",
     "area": "Area",
     "city": "City",
-    "regime": "Type"
+    "regime": "Type",
+    "chat": "AI Assistant"
+  },
+  "chat": {
+    "title": "IMIGRA.AI Assistant",
+    "subtitle": "Get help with job searches, documentation, diploma revalidation and more.",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "clearChat": "Clear conversation",
+    "suggestions": [
+      "How to revalidate my diploma in Brazil?",
+      "What documents do I need to work here?",
+      "How to improve my resume for the Brazilian market?",
+      "What are my rights as an immigrant worker?"
+    ],
+    "greeting": "Hello! I'm the IMIGRA.AI assistant. I'm here to help you with questions about employment, documentation and life in Brazil. How can I help you?",
+    "error": "Sorry, an error occurred. Please try again."
   },
   "errors": {
     "network": "Connection error. Try again.",

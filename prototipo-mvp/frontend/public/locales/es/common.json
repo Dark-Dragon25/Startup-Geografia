@@ -49,7 +49,24 @@
     "filters": "Filtros",
     "area": "Área",
     "city": "Ciudad",
-    "regime": "Régimen"
+    "regime": "Régimen",
+    "chat": "Asistente IA"
+  },
+  "chat": {
+    "title": "Asistente IMIGRA.AI",
+    "subtitle": "Resuelve tus dudas sobre vacantes, documentación, revalidación de títulos y mucho más.",
+    "placeholder": "Escribe tu pregunta...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "clearChat": "Limpiar conversación",
+    "suggestions": [
+      "¿Cómo revalidar mi título en Brasil?",
+      "¿Qué documentos necesito para trabajar aquí?",
+      "¿Cómo mejorar mi CV para el mercado brasileño?",
+      "¿Cuáles son mis derechos como trabajador inmigrante?"
+    ],
+    "greeting": "¡Hola! Soy el asistente de IMIGRA.AI. Estoy aquí para ayudarte con dudas sobre empleo, documentación y vida en Brasil. ¿Cómo puedo ayudarte?",
+    "error": "Lo siento, ocurrió un error. Intenta de nuevo."
   },
   "errors": {
     "network": "Error de conexión. Intenta de nuevo.",

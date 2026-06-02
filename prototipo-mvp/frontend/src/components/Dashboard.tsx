@@ -110,12 +110,20 @@ export default function Dashboard() {
             <h1 className="text-3xl font-bold text-blue-600">IMIGRA.AI</h1>
             <p className="text-gray-600 text-sm">{t('dashboard.title')}</p>
           </div>
-          <button
-            onClick={handleLogout}
-            className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition"
-          >
-            Sair
-          </button>
+          <div className="flex gap-3">
+            <button
+              onClick={() => router.push('/chat')}
+              className="bg-blue-100 hover:bg-blue-200 text-blue-700 font-bold py-2 px-4 rounded-lg transition flex items-center gap-2"
+            >
+              🤖 {t('dashboard.chat')}
+            </button>
+            <button
+              onClick={handleLogout}
+              className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition"
+            >
+              Sair
+            </button>
+          </div>
         </div>
       </header>
 

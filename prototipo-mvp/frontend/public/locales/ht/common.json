@@ -1,59 +1,49 @@
 {
   "welcome": {
-    "title": "Welcome to IMIGRA.AI",
-    "subtitle": "We connect qualified immigrants with the best job opportunities in Brazil.",
-    "description": "Find positions that value your background and experience, regardless of where you come from.",
-    "cta": "Let's Get Started",
-    "login": "Already have an account? Sign in"
+    "title": "Byenveni sou IMIGRA.AI",
+    "subtitle": "Nou konekte imigran kalifye yo avèk pi bon opòtinite travay nan Brezil.",
+    "description": "Jwenn travay ki valorize eksperyans ou, kèlkeswa kote ou soti.",
+    "cta": "Ann Kòmanse",
+    "login": "Ou gen yon kont? Konekte"
   },
   "onboarding": {
-    "step1": "Personal Information",
-    "step2": "Contact",
-    "step3": "Professional Profile",
-    "step4": "Documents",
-    "next": "Next",
-    "back": "Back",
-    "complete": "Create Account",
-    "progress": "{{current}} of {{total}}"
+    "step1": "Done Pèsonèl", "step2": "Kontak",
+    "step3": "Pwofil Pwofesyonèl", "step4": "Dokiman",
+    "next": "Swivan", "back": "Retounen",
+    "complete": "Kreye Kont", "progress": "{{current}} nan {{total}}"
   },
   "form": {
-    "fullName": "Full name",
-    "birthDate": "Date of birth",
-    "originCountry": "Country of origin",
-    "languages": "Languages you speak",
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm password",
-    "phone": "Mobile/WhatsApp",
-    "howDiscovered": "How did you discover IMIGRA.AI?",
-    "professionalArea": "Professional area",
-    "experience": "Experience level",
-    "preferredCity": "City where you want to work",
-    "curriculum": "Resume (PDF/DOCX)",
-    "diploma": "Education certificate",
-    "submit": "Submit",
-    "selectFile": "Select a file or drag here",
-    "required": "Required field",
-    "invalidEmail": "Invalid email",
-    "passwordTooShort": "Minimum 8 characters",
-    "passwordMismatch": "Passwords do not match",
-    "success": "Registration completed successfully!",
-    "loading": "Loading..."
+    "fullName": "Non konplè", "birthDate": "Dat nesans",
+    "originCountry": "Peyi orijin", "languages": "Lang ou pale",
+    "email": "Imèl", "password": "Modpas",
+    "confirmPassword": "Konfime modpas", "phone": "Telefòn/WhatsApp",
+    "howDiscovered": "Kijan ou te dekouvri IMIGRA.AI?",
+    "professionalArea": "Domèn pwofesyonèl", "experience": "Nivo eksperyans",
+    "preferredCity": "Vil kote ou vle travay", "curriculum": "CV (PDF/DOCX)",
+    "diploma": "Prèv fòmasyon", "submit": "Voye",
+    "selectFile": "Chwazi yon fichye oswa trennen isit",
+    "required": "Chan obligatwa", "invalidEmail": "Imèl pa valab",
+    "passwordTooShort": "Minimòm 8 karaktè",
+    "passwordMismatch": "Modpas yo pa menm",
+    "success": "Enskripsyon reyisi!", "loading": "Ap chaje..."
   },
   "dashboard": {
-    "title": "Opportunities for You",
-    "noJobs": "No positions found with your filters",
-    "compatibility": "Compatibility",
-    "viewDetails": "View Details",
-    "apply": "Apply",
-    "filters": "Filters",
-    "area": "Area",
-    "city": "City",
-    "regime": "Type"
+    "title": "Opòtinite pou Ou",
+    "noJobs": "Pa gen travay jwenn ak filtè ou yo",
+    "compatibility": "Konpatibilite", "viewDetails": "Wè Detay",
+    "apply": "Aplike", "filters": "Filtè",
+    "area": "Domèn", "city": "Vil", "regime": "Tip", "chat": "Asistan IA"
+  },
+  "chat": {
+    "title": "Asistan IMIGRA.AI",
+    "subtitle": "Jwenn èd pou travay, dokiman ak revalidasyon diplòm.",
+    "placeholder": "Ekri kesyon ou...", "send": "Voye",
+    "thinking": "Ap reflechi...", "clearChat": "Efase konvèsasyon",
+    "suggestions": ["Kijan pou revalide diplòm mwen nan Brezil?", "Ki dokiman mwen bezwen pou travay?", "Kijan pou amelyore CV mwen?", "Ki dwa mwen genyen kòm travayè imigran?"],
+    "greeting": "Bonjou! Mwen se asistan IMIGRA.AI. Mwen la pou ede ou ak travay ak lavi nan Brezil. Kijan mwen ka ede ou?",
+    "error": "Padon, te gen yon erè. Eseye ankò."
   },
   "errors": {
-    "network": "Connection error. Try again.",
-    "server": "Server error. Try later.",
-    "notFound": "Page not found"
+    "network": "Erè koneksyon.", "server": "Erè sèvè.", "notFound": "Paj pa jwenn"
   }
 }

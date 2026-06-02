@@ -49,7 +49,24 @@
     "filters": "Filtros",
     "area": "Área",
     "city": "Cidade",
-    "regime": "Regime"
+    "regime": "Regime",
+    "chat": "Assistente IA"
+  },
+  "chat": {
+    "title": "Assistente IMIGRA.AI",
+    "subtitle": "Tire suas dúvidas sobre vagas, documentação, revalidação de diplomas e muito mais.",
+    "placeholder": "Digite sua pergunta...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "clearChat": "Limpar conversa",
+    "suggestions": [
+      "Como revalidar meu diploma no Brasil?",
+      "Quais documentos preciso para trabalhar aqui?",
+      "Como melhorar meu currículo para o mercado brasileiro?",
+      "Quais são meus direitos como trabalhador imigrante?"
+    ],
+    "greeting": "Olá! Sou o assistente do IMIGRA.AI. Estou aqui para ajudar você com dúvidas sobre emprego, documentação e vida no Brasil. Como posso ajudar?",
+    "error": "Desculpe, ocorreu um erro. Tente novamente."
   },
   "errors": {
     "network": "Erro de conexão. Tente novamente.",
