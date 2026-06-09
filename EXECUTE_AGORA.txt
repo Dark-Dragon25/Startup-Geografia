@@ -1,0 +1,66 @@
+╔════════════════════════════════════════════════════════════╗
+║              IMIGRA.AI — EXECUTE AGORA!                    ║
+╚════════════════════════════════════════════════════════════╝
+
+📍 VOCÊ ESTÁ AQUI:
+   F:\.Trabalho\job-matching-platform
+
+🎯 FAÇA AGORA (30 segundos):
+
+   1. Duplo clique em: RODAR_PROJETO.bat
+
+   2. Aguarde 5-10 segundos
+      (vai abrir 2 terminais + navegador)
+
+   3. Navegador abre em: http://localhost:3000
+
+4. Procure pelo botão "🤖 Assistente IA"
+      (canto superior direito)
+
+   5. Clique e teste o chat!
+      (Escreva: "Como validar meu diploma?")
+
+═════════════════════════════════════════════════════════════
+
+✅ SEM RODAR O SCRIPT:
+
+Terminal 1:
+   cd F:\.Trabalho\job-matching-platform\prototipo-mvp\backend
+   npm run dev
+
+Terminal 2:
+   cd F:\.Trabalho\job-matching-platform\prototipo-mvp\frontend
+   npm run dev
+
+═════════════════════════════════════════════════════════════
+
+🌐 URLS IMPORTANTES:
+
+   App:  http://localhost:3000
+   Chat: http://localhost:3000/chat
+   API:  http://localhost:3001
+
+═════════════════════════════════════════════════════════════
+
+📚 GUIAS DISPONÍVEIS:
+
+   1. COMECE_AQUI.md      ← Guia rápido (melhor ler primeiro!)
+   2. GUIA_PRATICO.md     ← Tudo explicado em detalhe
+   3. STATUS_DO_SETUP.md  ← Checklist de verificação
+
+═════════════════════════════════════════════════════════════
+
+🚀 VOCÊ ESTÁ 100% PRONTO!
+
+   ✓ Backend instalado
+   ✓ Frontend instalado
+   ✓ Chat de IA pronto
+   ✓ 8 idiomas funcionando
+   ✓ Autenticação pronta
+   ✓ Tudo gratuito (R$ 0)
+
+═════════════════════════════════════════════════════════════
+
+👉 CLIQUE DUPLO EM: RODAR_PROJETO.bat
+
+═════════════════════════════════════════════════════════════

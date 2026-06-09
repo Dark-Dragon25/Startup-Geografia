@@ -4,63 +4,43 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/navigation';
 import { authService } from '@/services/api';
-import Step1PersonalData from './steps/Step1PersonalData';
-import Step2ContactDiscovery from './steps/Step2ContactDiscovery';
-import Step3ProfessionalProfile from './steps/Step3ProfessionalProfile';
-import Step4DocumentUpload from './steps/Step4DocumentUpload';
 
 export default function OnboardingWizard() {
   const { t } = useTranslation();
   const router = useRouter();
-  const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   const [formData, setFormData] = useState({
-    // Step 1
     fullName: '',
-    birthDate: '',
-    originCountry: '',
-    languages: [],
-    gender: '',
-    currentCity: '',
-
-    // Step 2
     email: '',
     password: '',
     confirmPassword: '',
-    phone: '',
-    howDiscovered: '',
-
-    // Step 3
-    professionalArea: '',
-    experience: '',
-    preferredCities: [],
-    salary: '',
-    regime: '',
-
-    // Step 4
-    cv: null,
-    diploma: null,
   });
 
-  const handleNext = () => {
-    if (step < 4) {
-      setStep(step + 1);
-      setError('');
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleBack = () => {
-    if (step > 1) {
-      setStep(step - 1);
-      setError('');
-    }
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError('');
 
-  const handleSubmit = async () => {
-    if (!formData.email || !formData.password) {
-      setError('E-mail e senha são obrigatórios');
+    if (!formData.fullName || !formData.email || !formData.password || !formData.confirmPassword) {
+      setError(t('form.required'));
+      return;
+    }
+
+    if (formData.password.length < 8) {
+      setError(t('form.passwordTooShort'));
+      return;
+    }
+
+    if (formData.password !== formData.confirmPassword) {
+      setError(t('form.passwordMismatch'));
       return;
     }
 
@@ -70,12 +50,6 @@ export default function OnboardingWizard() {
         email: formData.email,
         password: formData.password,
         fullName: formData.fullName,
-        birthDate: formData.birthDate,
-        originCountry: formData.originCountry,
-        languages: formData.languages,
-        professionalArea: formData.professionalArea,
-        experience: formData.experience,
-        preferredCities: formData.preferredCities,
       });
 
       localStorage.setItem('token', response.data.token);
@@ -83,127 +57,121 @@ export default function OnboardingWizard() {
 
       router.push('/dashboard');
     } catch (err: any) {
-      setError(err.response?.data?.message || t('errors.server'));
+      setError(err.response?.data?.error || err.response?.data?.message || t('errors.server'));
     } finally {
       setLoading(false);
     }
   };
 
-  const updateFormData = (data: any) => {
-    setFormData({ ...formData, ...data });
-  };
-
-  const steps = [
-    {
-      title: t('onboarding.step1'),
-      component: (
-        <Step1PersonalData
-          data={formData}
-          onChange={updateFormData}
-          onNext={handleNext}
-        />
-      ),
-    },
-    {
-      title: t('onboarding.step2'),
-      component: (
-        <Step2ContactDiscovery
-          data={formData}
-          onChange={updateFormData}
-          onNext={handleNext}
-        />
-      ),
-    },
-    {
-      title: t('onboarding.step3'),
-      component: (
-        <Step3ProfessionalProfile
-          data={formData}
-          onChange={updateFormData}
-          onNext={handleNext}
-        />
-      ),
-    },
-    {
-      title: t('onboarding.step4'),
-      component: (
-        <Step4DocumentUpload
-          data={formData}
-          onChange={updateFormData}
-          onSubmit={handleSubmit}
-        />
-      ),
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-2xl mx-auto">
-        {/* Progress bar */}
-        <div className="mb-8">
-          <div className="flex justify-between mb-2">
-            <span className="text-sm font-medium text-gray-600">
-              {t('onboarding.progress', {
-                current: step,
-                total: 4,
-              })}
-            </span>
-          </div>
-          <div className="h-2 bg-gray-200 rounded-full">
-            <div
-              className="h-full bg-blue-600 rounded-full transition-all duration-300"
-              style={{ width: `${(step / 4) * 100}%` }}
-            />
-          </div>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 py-12 px-4 flex flex-col justify-center">
+      <div className="max-w-md mx-auto w-full">
+        {/* Logo / Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-blue-600 mb-2">IMIGRA.AI</h1>
+          <p className="text-gray-600">{t('welcome.subtitle')}</p>
         </div>
 
-        {/* Title */}
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">{steps[step - 1].title}</h1>
+        {/* Card */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-6 border border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            {t('welcome.cta')}
+          </h2>
 
-        {/* Error message */}
-        {error && (
-          <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
-            {error}
-          </div>
-        )}
-
-        {/* Step component */}
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          {steps[step - 1].component}
-        </div>
-
-        {/* Navigation buttons */}
-        <div className="flex gap-4">
-          {step > 1 && (
-            <button
-              onClick={handleBack}
-              className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-6 rounded-lg transition duration-300"
-              disabled={loading}
-            >
-              {t('onboarding.back')}
-            </button>
+          {/* Error message */}
+          {error && (
+            <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-500 text-red-700 rounded text-sm">
+              {error}
+            </div>
           )}
 
-          {step < 4 && (
-            <button
-              onClick={handleNext}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50"
-              disabled={loading}
-            >
-              {t('onboarding.next')}
-            </button>
-          )}
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Full Name */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {t('form.fullName')} *
+              </label>
+              <input
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                placeholder="Ex: Juan Perez"
+                required
+                disabled={loading}
+              />
+            </div>
 
-          {step === 4 && (
+            {/* Email */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {t('form.email')} *
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                placeholder="seu@email.com"
+                required
+                disabled={loading}
+              />
+            </div>
+
+            {/* Password */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {t('form.password')} *
+              </label>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                placeholder="••••••••"
+                required
+                disabled={loading}
+              />
+            </div>
+
+            {/* Confirm Password */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {t('form.confirmPassword')} *
+              </label>
+              <input
+                type="password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                placeholder="••••••••"
+                required
+                disabled={loading}
+              />
+            </div>
+
+            {/* Submit Button */}
             <button
-              onClick={handleSubmit}
-              className="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-50"
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg disabled:opacity-50 mt-6"
               disabled={loading}
             >
               {loading ? t('form.loading') : t('onboarding.complete')}
             </button>
-          )}
+          </form>
         </div>
+
+        {/* Footnote */}
+        <p className="text-center text-sm text-gray-600">
+          {t('welcome.login')}{' '}
+          <a href="/login" className="text-blue-600 hover:underline font-semibold">
+            {t('welcome.login').includes('?') ? t('welcome.login').split('?')[1]?.trim() || 'Entrar' : 'Entrar'}
+          </a>
+        </p>
       </div>
     </div>
   );

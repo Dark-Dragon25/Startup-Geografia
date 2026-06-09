@@ -12,7 +12,7 @@ module.exports = {
         secondary: '#64748b',
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto'],
+        sans: ['var(--font-jakarta)', 'sans-serif'],
       },
     },
   },

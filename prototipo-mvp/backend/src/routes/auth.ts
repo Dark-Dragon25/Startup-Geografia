@@ -5,8 +5,7 @@ import supabase from '../config/supabase';
 
 const router = Router();
 
-// Mock user database for demo
-const mockUsers: any = {};
+import { mockUsers } from '../services/userService';
 
 router.post('/signup', async (req: Request, res: Response) => {
   try {

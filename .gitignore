@@ -1,0 +1,54 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+.pnp
+.pnp.js
+
+# ===========================
+# Environment files (NEVER commit secrets)
+# ===========================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# ===========================
+# Build outputs
+# ===========================
+dist/
+build/
+.next/
+out/
+
+# ===========================
+# Logs
+# ===========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================
+# OS/Editor files
+# ===========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===========================
+# TypeScript cache
+# ===========================
+*.tsbuildinfo
+
+# ===========================
+# Zip/archive files (side projects in this folder)
+# ===========================
+*.zip
+*.tar.gz
+compute-the-platform-to-build-and-ship-ai-agents/
+liquid-glass-login-page/

@@ -2,24 +2,9 @@ import { Router, Response } from 'express';
 import { authenticateToken, AuthRequest } from '../middleware/auth';
 import { mockJobs } from '../services/vagasService';
 import { recomendarVagas } from '../services/matchingService';
+import { getUserProfile } from '../services/userService';
 
 const router = Router();
-
-// Mock user data
-const mockUserData: any = {
-  user_1: {
-    skills: ['Node.js', 'PostgreSQL', 'React', 'TypeScript'],
-    experience: 'pleno',
-    languages: ['Português', 'Inglês'],
-    preferredCities: ['São Paulo', 'Remoto'],
-  },
-  user_2: {
-    skills: ['AutoCAD', 'Revit', 'Excel'],
-    experience: 'senior',
-    languages: ['Português', 'Espanhol'],
-    preferredCities: ['Rio de Janeiro', 'Remoto'],
-  },
-};
 
 // GET /api/vagas - Listar todas as vagas com filtros
 router.get('/', (req: any, res: Response) => {
@@ -54,26 +39,12 @@ router.get('/', (req: any, res: Response) => {
   }
 });
 
-// GET /api/vagas/:id - Obter detalhes de uma vaga
-router.get('/:id', (req: any, res: Response) => {
-  try {
-    const vaga = mockJobs.find((j: any) => j.id === req.params.id);
-
-    if (!vaga) {
-      return res.status(404).json({ error: 'Vaga não encontrada' });
-    }
-
-    res.json(vaga);
-  } catch (error: any) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
 // GET /api/vagas/recomendadas - Vagas recomendadas para o usuário (autenticado)
-router.get('/recomendadas', authenticateToken, (req: AuthRequest, res: Response) => {
+// IMPORTANT: Must be declared BEFORE /:id to avoid Express catching it as id="recomendadas"
+router.get('/recomendadas', authenticateToken, async (req: AuthRequest, res: Response) => {
   try {
     const userId = req.userId!;
-    const userData = mockUserData[userId] || {
+    const userData = await getUserProfile(userId) || {
       skills: [],
       experience: 'junior',
       languages: ['Português'],
@@ -86,6 +57,21 @@ router.get('/recomendadas', authenticateToken, (req: AuthRequest, res: Response)
       count: vagas.length,
       vagas,
     });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// GET /api/vagas/:id - Obter detalhes de uma vaga
+router.get('/:id', (req: any, res: Response) => {
+  try {
+    const vaga = mockJobs.find((j: any) => j.id === req.params.id);
+
+    if (!vaga) {
+      return res.status(404).json({ error: 'Vaga não encontrada' });
+    }
+
+    res.json(vaga);
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }

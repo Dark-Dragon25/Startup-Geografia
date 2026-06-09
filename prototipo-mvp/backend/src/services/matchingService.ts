@@ -8,7 +8,7 @@ export const calcularScore = (user: any, job: any): number => {
 
   if (skillsJob.length > 0) {
     const skillsMatches = skillsJob.filter((skill: string) =>
-      skillsUser.some(us => us.includes(skill) || skill.includes(us))
+      skillsUser.some((us: string) => us.includes(skill) || skill.includes(us))
     );
     const skillsScore = (skillsMatches.length / skillsJob.length) * 40;
     score += skillsScore;
